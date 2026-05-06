@@ -83,28 +83,4 @@ def multi_qa_task(llm, df) -> tuple[float, float]:
     return accuracy, std
 
 if __name__ == "__main__":
-    run = multi_qa_task.run(kbench.llm, df)
-    
-    print("\n" + "="*60)
-    print("BENCHMARK RESULTS")
-    print("="*60)
-    
-    if run.subruns and run.subruns.runs:
-        for idx, subrun in enumerate(run.subruns.runs):
-            # The result dictionary returned by single_qa_task
-            res = subrun.result
-            
-            q = res.get('question', '')
-            target = res.get('gold_target', '')
-            pred = res.get('predicted_answer', '')
-            correct = res.get('is_correct', False)
-            
-            status = "✅ PASS" if correct else "❌ FAIL"
-            
-            print(f"\n[Question {idx+1}]")
-            print(f"Q: {q}")
-            print(f"Expected:  {target}")
-            print(f"Predicted: {pred}  {status}")
-            print("-" * 60)
-            
-    print(f"\nFinal Accuracy: {run.result[0]*100:.1f}%\n")
+    multi_qa_task.run(kbench.llm, df)
