@@ -199,7 +199,7 @@ We are recruiting early-access testers!
 
 <div class="mt-8 mr-8 flex flex-col justify-center items-center h-full gap-4">
   <div class="text-center font-bold text-lg text-gray-700 dark:text-gray-300">Scan to join the waitlist</div>
-  <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://www.kaggle.com/discussions/product-announcements/697452" class="max-w-[200px] rounded-lg shadow-sm border border-gray-200" />
+  <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://docs.google.com/forms/d/e/1FAIpQLScEMET896-z-cYdhAL3hfiJyO6j1kN0db__S0xQkx_b2_r6Xg/viewform" class="max-w-[200px] rounded-lg shadow-sm border border-gray-200" />
 </div>
 
 ---
@@ -214,4 +214,4 @@ layout: one-col
 
 <br/>
 
-**Join us:** [kaggle.com/discussions/product-announcements/697452](https://www.kaggle.com/discussions/product-announcements/697452)
+**Join us:** [Waitlist Google Form](https://docs.google.com/forms/d/e/1FAIpQLScEMET896-z-cYdhAL3hfiJyO6j1kN0db__S0xQkx_b2_r6Xg/viewform)
